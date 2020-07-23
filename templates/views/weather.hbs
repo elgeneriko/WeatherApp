@@ -1,0 +1,38 @@
+
+{{>header}}
+
+
+<body>   
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-2"></div>
+                <h2 class="navbar-brand col-6">{{location}}</h2>
+                {{!-- <img src="{{forecast.current.weather_icons}}" alt="weather icon" class="col-2"> --}}
+            </div>
+            <div class="description">
+                <div class="row">
+                    <p class="h4 col-8">{{forecast.current.weather_descriptions}}</p>
+                    {{!-- <p class="h4">{{forecast.current.weather_descriptions}}</p> --}}
+                    {{!-- <p class="h4 col-3">Feels like {{forecast.current.feelslike}}</p>    --}}
+                </div>
+                <div class="row">
+                    <img src="{{forecast.current.weather_icons}}" alt="weather icon" class="col-2">
+                    <div class="col-4"></div>
+                    <div class="h4 col-4 text-des">
+                        <ul>
+                        <li>It is currently {{forecast.current.temperature}}°C</li>
+                        <li>Feels like {{forecast.current.feelslike}}°C</li> 
+                        <li>Humidity:{{forecast.current.humidity}}%</li>
+                        <li>Precipitation:{{forecast.current.precipitation}}%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+
+{{>footer}}

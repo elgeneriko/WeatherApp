@@ -1,0 +1,49 @@
+.description{
+    padding-left: 8px;
+}
+img{
+    min-width: 207px;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 5px;
+}
+
+/* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+#card-img{
+    max-height: 198px;
+}
+
+.card{
+    width: 430px;
+    min-width: 350px;
+}
+.input-group{
+    min-width: 17rem;
+}

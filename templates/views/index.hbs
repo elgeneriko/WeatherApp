@@ -1,0 +1,35 @@
+
+{{>header}}
+
+
+<body>   
+ 
+{{!-- <form action="" id="search-form">
+<input placeholder="location" id="search-button">
+<button>Search</button>
+</form> --}}
+<div class="main">
+  <!-- Another variation with a button -->
+  <div class="input-group">
+    {{!-- <form action="" id="search-form"> --}}
+    <input type="text" id="search-form" class="form-control" placeholder="Search this blog">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" id="search-button" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    {{!-- </form> --}}
+  </div>  
+</div>
+<div class="card mx-auto" style="width: 23rem;">
+  <img class="card-img-top" id="card-img" src="https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png">
+  <div class="card-body">
+    <h5 id="location" class="card-title">Accurate and precise weather forecasts on the go!</h5>
+    <p id="temp" class="card-text"></p>
+    <p id="feel" class="card-text"></p>
+    <p id="desc" class="card-text"></p>
+  </div>
+</div> 
+<script src="/js/script.js"></script>
+</body>
+{{>footer}}
